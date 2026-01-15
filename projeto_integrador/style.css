@@ -1,0 +1,348 @@
+html{
+  background-image: url("fundo.png");
+}
+
+footer a, .barra a, .texto-informativo h1, h1, h2, h3, .titulo {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 600;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  margin-right: 260px;
+  margin-left: 260px;
+  border-radius: 20px;
+}
+
+.barra .titulo {
+  color: #7a3002;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.barra a {
+  background-color:#a1e08b; /* verde */
+  color:#3e5524;
+  border: none;
+  padding: 6px 12px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.barra a:hover{
+  color:#ffffff
+}
+
+.container {
+  max-width: 1200px; /* ou 1100px */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.banner-promocoes {
+  width: 100%;
+  height: 370px; /* ajuste como quiser */
+  position: relative;
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.slide.ativo {
+  opacity: 1;
+}
+
+.texto-chamativo{
+    margin-top: 2%;
+    text-align: center;
+    color:#7a3002;
+}
+
+.texto-informativo{
+    text-align: center;
+    color:#7a3002;
+}
+
+/* Container Principal do Header */
+.main-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #fff;
+  height: 80px; /* Defina uma altura fixa se desejar */
+}
+
+/* 1. O logo ocupa o lado esquerdo */
+.logo {
+  flex: 1; /* Faz esse bloco crescer e ocupar o espaço disponível na esquerda */
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* 2. A barra de pesquisa fica no centro absoluto */
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #7a3002;
+  border-radius: 50px;
+  padding: 5px 15px;
+  width: 500px; /* Tamanho fixo para garantir a centralização */
+  margin: 0 20px; /* Margem lateral de segurança */
+}
+
+/* 3. As ações ocupam o lado direito */
+.header-actions {
+  flex: 1; /* Faz esse bloco crescer igual ao logo, equilibrando o centro */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+.action-item i, .account-link i {
+  font-size: 28px;
+  color: #7a3002;
+}
+
+.account-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+}
+
+.account-text {
+  display: flex;
+  flex-direction: column; /* Coloca "minha" em cima de "conta" */
+  text-align: right;
+  line-height: 1.1;
+  color: #7a3002;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.account-text strong {
+  text-transform: lowercase; /* Mantém o estilo da imagem */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #7a3002; /* Cor marrom do contorno */
+  border-radius: 50px;       /* Deixa as bordas bem arredondadas */
+  padding: 5px 15px;
+  width: 100%;
+  max-width: 500px;          /* Limita o tamanho horizontal */
+  height: 40px;
+}
+
+.search-input {
+  border: none;
+  outline: none;             /* Remove o contorno azul ao clicar */
+  flex-grow: 1;              /* Faz o input ocupar o espaço central */
+  padding: 0 10px;
+  font-size: 16px;
+  color: #a68b7c;            /* Cor do texto placeholder */
+}
+
+.search-icon, .mic-button {
+  color: #632d00;            /* Cor marrom dos ícones */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Estilo para mudar a cor do placeholder */
+.search-input::placeholder {
+  color: #c0a99a;
+}
+
+.logo img{
+  width: 25%;
+}
+
+.logo a{
+  width:100%
+}
+
+.rodape{
+  background-color: #3e5524;
+}
+
+.sobre-nos{
+    color: white;
+    padding: 20px;
+}
+
+.sobre-nos a{
+    padding: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: #7a3002;
+    color: white;
+    transition: 0.3s;
+}
+
+.sobre-nos a:hover{
+    color: #a1e08b
+}
+
+.redes-sociais {
+  text-align: center;
+  font-size: 15px;
+  color:#ffffff
+}
+
+.redes-sociais img{
+  width: 30px;
+}
+
+footer{
+  padding: 20px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 10px;
+    color:#ffffff
+}
+
+nav{
+    background-color: #7a3002;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+}
+
+nav li{
+    margin:0 20px;
+}
+
+nav a{
+    font-size: 90%;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #a1e08b
+}
+
+.prateleira {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto; /* permite rolar horizontal */
+  justify-content: center; /* CENTRALIZA */
+}
+
+.prateleira::-webkit-scrollbar {
+  height: 8px;
+}
+
+.prateleira::-webkit-scrollbar-thumb {
+  background: #7a3002;
+  border-radius: 10px;
+}
+
+.produto {
+  min-width: 220px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.produto img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+.produto h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  min-height: 40px;
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color:#7a3002 ;
+}
+
+.produto button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #7a3002;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.produto button:hover {
+  background: #7a3002;
+  color: #fff;
+}
+
+
+.sobre h1{
+  margin: 50px;
+  font-size: 400%;
+  color:#7a3002;
+}
+
+.sobre p{
+  margin: 50px;
+  text-align: justify;
+  color:#7a3002;
+  font-size: 20px;
+}
+
+.sobre img{
+  width: 20%;
+  margin: 50px;
+}
