@@ -186,6 +186,76 @@ body{
   width:100%
 }
 
+.folder-prerodape {
+  width: 100vw;          /* ocupa toda a largura da tela */
+  margin-left: 50%;
+  transform: translateX(-50%); /* ignora containers centrais */
+  overflow: hidden;
+}
+
+.folder-prerodape img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.reciclagem {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px 30px;
+}
+
+.reciclagem-conteudo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.reciclagem-texto {
+  flex: 1;
+}
+
+.reciclagem-texto h2 {
+  color: #3e5524;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.reciclagem-texto p {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.reciclagem-imagem {
+  flex: 1;
+  text-align: center;
+}
+
+.reciclagem-imagem img {
+  max-width: 50%;
+  height: auto;
+}
+
+
+
+.pre-rodape{
+  margin-top: 15px;
+  text-align: center;
+  background-color: #a1e08b;
+  padding: 30px;
+}
+
+.pre-rodape p{
+  font-size: 13px;
+}
+
+.pre-rodape img{
+  width:25px;
+}
+
 .rodape{
   background-color: #3e5524;
 }
@@ -193,6 +263,8 @@ body{
 .sobre-nos{
     color: white;
     padding: 20px;
+    font-size: 15px;
+    text-align:left;
 }
 
 .sobre-nos a{
@@ -210,7 +282,7 @@ body{
 
 .redes-sociais {
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   color:#ffffff
 }
 
@@ -258,7 +330,7 @@ nav a:hover{
 }
 
 .container{
-  max-width: 1200;
+  max-width: 1200px;
   margin: 0 auto;
   padding:0 20px;
 }
@@ -283,7 +355,7 @@ nav a:hover{
   min-width: 220px;
   background: #fff;
   border-radius: 14px;
-  padding: 15px;
+  padding: 1px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
   text-align: center;
   flex-shrink: 0;
