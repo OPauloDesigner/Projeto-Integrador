@@ -2,7 +2,7 @@ html{
   background-image: url("fundo.png");
 }
 
-footer a, .barra a, .texto-informativo h1, h1, h2, h3, .titulo {
+nav a, .sobre-nos a, footer a, .barra a, .texto-informativo h1, h1, h2, h3, .titulo {
   font-family: 'League Spartan', sans-serif;
   font-weight: 600;
 }
@@ -16,10 +16,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 25px;
-  margin-right: 260px;
-  margin-left: 260px;
-  border-radius: 20px;
+  padding: 10px 0px;
 }
 
 .barra .titulo {
@@ -43,12 +40,6 @@ body{
 
 .barra a:hover{
   color:#ffffff
-}
-
-.container {
-  max-width: 1200px; /* ou 1100px */
-  margin: 0 auto;
-  padding: 0 16px;
 }
 
 .banner-promocoes {
@@ -266,16 +257,21 @@ nav a:hover{
     color: #a1e08b
 }
 
+.container{
+  max-width: 1200;
+  margin: 0 auto;
+  padding:0 20px;
+}
+
 .prateleira {
   display: flex;
   gap: 20px;
-  padding: 20px;
-  overflow-x: auto; /* permite rolar horizontal */
-  justify-content: center; /* CENTRALIZA */
+  padding: 20px 0;
+  overflow-x: auto; /* CENTRALIZA */
 }
 
 .prateleira::-webkit-scrollbar {
-  height: 8px;
+  height: 8%;
 }
 
 .prateleira::-webkit-scrollbar-thumb {
@@ -345,4 +341,8 @@ nav a:hover{
 .sobre img{
   width: 20%;
   margin: 50px;
+}
+
+.historia{
+  display: flex;
 }
