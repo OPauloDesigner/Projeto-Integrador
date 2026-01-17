@@ -199,49 +199,23 @@ body{
   display: block;
 }
 
-
-
 .reciclagem {
   max-width: 1100px;
   margin: 60px auto;
   padding: 40px 30px;
-  background-color: #3e5524;
-  border-radius: 14px;
 }
 
-.reciclagem-conteudo {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.reciclagem-texto {
-  flex: 1;
-}
-
-.reciclagem-texto h2 {
-  color: #a1e08b;
+.reciclagem h2 {
+  color: #3e5524;
   font-size: 28px;
   margin-bottom: 20px;
 }
 
-.reciclagem-texto p {
-  color: #ffffff;
+.reciclagem p {
+  color: #000000;
   font-size: 18px;
   line-height: 1.6;
 }
-
-.reciclagem-imagem {
-  flex: 1;
-  text-align: center;
-}
-
-.reciclagem-imagem img {
-  max-width: 50%;
-  height: auto;
-}
-
-
 
 .pre-rodape{
   margin-top: 15px;
