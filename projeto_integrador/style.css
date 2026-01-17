@@ -1,5 +1,5 @@
 html{
-  background-image: url("fundo.png");
+  background-image: url("background/fundo.png");
 }
 
 nav a, .sobre-nos a, footer a, .barra a, .texto-informativo h1, h1, h2, h3, .titulo {
@@ -44,7 +44,9 @@ body{
 
 .banner-promocoes {
   width: 100%;
-  height: 370px; /* ajuste como quiser */
+  height: 40vh;
+  min-height: 220px;
+  max-height: 420px;
   position: relative;
   overflow: hidden;
   margin: 30px 0;
@@ -60,6 +62,7 @@ body{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -179,11 +182,7 @@ body{
 }
 
 .logo img{
-  width: 25%;
-}
-
-.logo a{
-  width:100%
+  width: 100px;
 }
 
 .folder-prerodape {
@@ -194,6 +193,7 @@ body{
 }
 
 .folder-prerodape img {
+  margin-top: 50px;
   width: 100%;
   height: auto;
   display: block;
@@ -205,6 +205,8 @@ body{
   max-width: 1100px;
   margin: 60px auto;
   padding: 40px 30px;
+  background-color: #3e5524;
+  border-radius: 14px;
 }
 
 .reciclagem-conteudo {
@@ -218,13 +220,13 @@ body{
 }
 
 .reciclagem-texto h2 {
-  color: #3e5524;
+  color: #a1e08b;
   font-size: 28px;
   margin-bottom: 20px;
 }
 
 .reciclagem-texto p {
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.6;
 }
@@ -244,7 +246,6 @@ body{
 .pre-rodape{
   margin-top: 15px;
   text-align: center;
-  background-color: #a1e08b;
   padding: 30px;
 }
 
@@ -330,6 +331,8 @@ nav a:hover{
 }
 
 .container{
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 14px;
   max-width: 1200px;
   margin: 0 auto;
   padding:0 20px;
