@@ -2,11 +2,10 @@ html{
   background-image: url("background/fundo.png");
 }
 
-nav a, .sobre-nos a, footer a, .barra a, .texto-informativo h1, h1, h2, h3, .titulo {
+nav a, footer a, .barra a, .texto-informativo h1, h1, h2, h3, .titulo {
   font-family: 'League Spartan', sans-serif;
   font-weight: 600;
 }
-
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -199,24 +198,6 @@ body{
   display: block;
 }
 
-.reciclagem {
-  max-width: 1100px;
-  margin: 60px auto;
-  padding: 40px 30px;
-}
-
-.reciclagem h2 {
-  color: #3e5524;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.reciclagem p {
-  color: #000000;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
 .pre-rodape{
   margin-top: 15px;
   text-align: center;
@@ -235,24 +216,20 @@ body{
   background-color: #3e5524;
 }
 
-.sobre-nos{
-    color: white;
-    padding: 20px;
-    font-size: 15px;
-    text-align:left;
+.saiba-mais{
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  text-align:center;
 }
 
-.sobre-nos a{
-    padding: 10px;
-    font-weight: bolder;
-    text-decoration: none;
-    background-color: #7a3002;
-    color: white;
-    transition: 0.3s;
+.saiba-mais ul{
+  list-style: none;
+  padding: 10px;
 }
 
-.sobre-nos a:hover{
-    color: #a1e08b
+.saiba-mais a{
+  color:#ffffff;
 }
 
 .redes-sociais {
