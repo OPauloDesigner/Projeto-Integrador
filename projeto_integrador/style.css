@@ -286,7 +286,7 @@ nav a:hover{
   border-radius: 14px;
   max-width: 1200px;
   margin: 0 auto;
-  padding:0 20px;
+  padding:0 10px;
 }
 
 .prateleira {
@@ -350,25 +350,95 @@ nav a:hover{
   color: #fff;
 }
 
-
-.sobre h1{
-  margin: 50px;
-  font-size: 400%;
-  color:#7a3002;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
 }
 
-.sobre p{
-  margin: 50px;
-  text-align: justify;
-  color:#7a3002;
-  font-size: 20px;
+body {
+  background-color: #fff;
+  color: #2b2b2b;
 }
 
-.sobre img{
-  width: 20%;
-  margin: 50px;
-}
-
-.historia{
+.bloco {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px 10%;
+}
+
+.bloco.invertido {
+  flex-direction: row-reverse;
+}
+
+.texto {
+  max-width: 520px;
+}
+
+.texto h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #7a3002;
+}
+
+.texto p {
+  font-size: 30px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #000000;
+} 
+
+.texto.destaque h2 {
+  color: #7a3002;
+}
+
+.imagem img {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .bloco,
+  .bloco.invertido {
+    flex-direction: column;
+    padding: 60px 8%;
+    text-align: center;
+  }
+
+  .texto {
+    max-width: 100%;
+  }
+
+  .texto h2 {
+    font-size: 28px;
+  }
+}
+
+.btn-voltar {
+  position: fixed;
+  top: 50%;
+  left: -63px; /* escondido */
+  transform: translateY(-50%);
+  background-color: #7a3002;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 0 25px 25px 0;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: all 0.35s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+/* Quando passa o mouse */
+.btn-voltar:hover {
+  left: 0;
 }
