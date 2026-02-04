@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor da Terra</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="main-header">
+  <div class="logo">
+    <img src="logos/logo.png" alt="Sabor da Terra">
+  </div>
+
+  <div class="search-container">
+    <i class="fas fa-search search-icon"></i>
+    <input type="text" placeholder="Pesquisar produto" class="search-input">
+    <button class="mic-button">
+      <i class="fas fa-microphone"></i>
+    </button>
+  </div>
+
+  <div class="header-actions">
+    <a href="carrinho.html" class="action-item">
+      <i class="fas fa-shopping-cart"></i>
+      <span id="cart-count" class="cart-count">0</span>
+    </a>
+    
+    <a href="Tela de login/index.html" class="account-link">
+      <div class="account-text">
+        <span>minha</span>
+        <strong>conta</strong>
+      </div>
+      <i class="fas fa-user-circle"></i>
+    </a>
+  </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="promocoes.html">Promoções</a></li>
+        <li><a href="frutas.html">Frutas e Verduras</a></li>
+        <li><a href="padaria.html">Padaria</a></li>
+        <li><a href="doces.html">Doces</a></li>
+        <li><a href="laticineos.html">Laticíneos</a></li>
+    </ul>
+</nav>
+
+<div class="texto-chamativo">
+    <p>AQUI TEMOS TUDO O QUE VOCÊ PRECISA E MAIS UM POUCO!!!</p>
+</div>
+
+<section class="banner-promocoes">
+  <div class="slider">
+      <img src="folders/folder_principal.png" class="slide ativo" alt="Promoção 1">
+      <img src="folders/folder_principal1.png" class="slide" alt="Promoção 2">
+      <img src="folders/folder_principal2.png" class="slide" alt="Promoção 3">
+  </div>
+</section>
+
+<div class="container">
+    
+    <section class="prateleira">
+      <div class="produto" data-id="11" data-nome="Queijo Curado" data-preco="39.90" data-imagem="laticineos/laticineos.png">
+        <img src="laticineos/laticineos.png" alt="Queijo Curado">
+        <h3>Queijo Curado</h3>
+        <p class="preco">R$ 39,90</p>
+        <button class="btn-adicionar">Adicionar</button>
+      </div>
+
+      <div class="produto" data-id="12" data-nome="Leite 1L" data-preco="5.50" data-imagem="laticineos/laticineos1.png">
+        <img src="laticineos/laticineos1.png" alt="Leite">
+        <h3>Leite 1L</h3>
+        <p class="preco">R$ 5,50</p>
+        <button class="btn-adicionar">Adicionar</button>
+      </div>
+
+      <div class="produto" data-id="13" data-nome="Manteiga Caseira" data-preco="14.90" data-imagem="laticineos/laticineos2.png">
+        <img src="laticineos/laticineos2.png" alt="Manteiga Caseira">
+        <h3>Manteiga Caseira</h3>
+        <p class="preco">R$ 14,90</p>
+        <button class="btn-adicionar">Adicionar</button>
+      </div>
+
+      <div class="produto" data-id="14" data-nome="Requeijão Caseiro" data-preco="12.90" data-imagem="laticineos/laticineos3.png">
+        <img src="laticineos/laticineos3.png" alt="Requeijão Caseiro">
+        <h3>Requeijão Caseiro</h3>
+        <p class="preco">R$ 12,90</p>
+        <button class="btn-adicionar">Adicionar</button>
+      </div>
+
+      <div class="produto" data-id="15" data-nome="Iogurte Natural" data-preco="4.50" data-imagem="laticineos/laticineos4.png">
+        <img src="laticineos/laticineos4.png" alt="Iogurte Natural">
+        <h3>Iogurte Natural</h3>
+        <p class="preco">R$ 4,50</p>
+        <button class="btn-adicionar">Adicionar</button>
+      </div>
+    </section>
+</div>
+
+<div class="pre-rodape">
+  <p>Formas de pagamento:</p>
+  <img src="logos/cielo.png" alt="Logo-cielo">
+  <img src="logos/nubank.png" alt="Logo-nubank">
+  <img src="logos/visa.png" alt="Logo-visa">
+  <img src="logos/mastercard.png" alt="Logo-mastercard">
+  <img src="logos/paypal.jpg" alt="Logo-paypal">
+  <img src="logos/logo_pix.png.webp" alt="Logo-pix">
+</div>
+
+<div class="rodape">
+  <div class="saiba-mais">
+    <h2>Saiba mais</h2>
+    <ul>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+      <li><a href="politica.html">Política de Privacidade</a></li>
+      <li><a href="contato.html">Fale Conosco</a></li>
+      <li><a href="comprar.html">Como Comprar</a></li>
+    </ul>
+  </div>
+  
+  <div class="redes-sociais">
+      <p>Siga nossas<br>redes sociais:</p>
+      <a href="https://instagram.com.br"><img src="logos/instagram.png" alt="Logo-instagram"></a>
+      <a href="https://whatsapp.com.br"><img src="logos/whatsapp.png" alt="Logo-whatsapp"></a>
+  </div>
+  
+  <footer>
+        <p>Copyright © 2026 www.sabordaterra.com.br, TODOS OS DIREITOS RESERVADOS. As fotos aqui divulgadas, 
+            logotipo e marca são de propriedade do site www.sabordaterra.com.br.</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

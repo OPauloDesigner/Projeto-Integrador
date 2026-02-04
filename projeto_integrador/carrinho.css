@@ -1,11 +1,9 @@
-.menu a, .titulo-area {
+body, .search-container input, nav a, footer a, .barra a, .empty-cart p, .rodape {
   font-family: 'League Spartan', sans-serif;
   font-weight: 600;
 }
 
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +16,7 @@ body {
     align-items: center;
     padding: 10px 5%;
     background-color: #fff;
-    height: 80px;
+    height: 60px;
 }
 
 /* Logo no lado esquerdo */
@@ -29,32 +27,39 @@ body {
 }
 
 .logo img {
-    width: 100px;
+    width: 15%;
     max-width: 150px;
-}
-
-.logo a {
-    width: 100%;
+    width: 100px;
 }
 
 /* Barra de pesquisa no centro */
 .search-container {
   display: flex;
   align-items: center;
+  background-color: #fff;
   border: 2px solid #7a3002;
   border-radius: 50px;
   padding: 5px 15px;
-  width: 500px; /* Tamanho fixo para garantir a centralização */
-  margin: 0 20px; /* Margem lateral de segurança */
+  width: 100%;
+  max-width: 500px;
+  height: 30px;
 }
 
 .search-input {
-    border: none;
-    outline: none;
-    flex-grow: 1;
-    padding: 0 10px;
-    font-size: 16px;
-    color: #a68b7c;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #a68b7c;
+}
+
+.search-icon, .mic-button {
+  color: #632d00;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .search-input::placeholder {
@@ -79,10 +84,33 @@ body {
     gap: 25px;
 }
 
+.action-item {
+    position: relative;
+    display: inline-block;
+}
+
 .action-item i,
 .account-link i {
     font-size: 28px;
     color: #7a3002;
+}
+
+/* Contador do carrinho */
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
 }
 
 .account-link {
@@ -112,17 +140,20 @@ body {
     background-color: #7a3002;
     padding: 10px;
     text-align: center;
+    margin: 0
 }
 
 .menu a {
+    font-size: 90%;
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    margin:0 20px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .menu a:hover {
-    text-decoration: underline;
+    color: #a1e08b
 }
 
 /* ==================== TÍTULO CARRINHO ==================== */
@@ -142,25 +173,39 @@ h1 {
     margin: 0;
 }
 
-/* ==================== ETAPAS ==================== */
+/* ==================== CARRINHO VAZIO ==================== */
 
-.etapas {
-    display: flex;
-    gap: 10px;
+.empty-cart {
+    text-align: center;
+    padding: 60px 20px;
+    color: #7a3002;
 }
 
-.etapa {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #e6a57a;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.empty-cart i {
+    font-size: 80px;
+    color: #7a3002;
+    opacity: 0.3;
+    margin-bottom: 20px;
 }
 
-.etapa-ativa {
+.empty-cart p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.btn-voltar-compras {
+    display: inline-block;
+    background-color: #7a3002;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-voltar-compras:hover {
     background-color: #7a3002;
 }
 
@@ -170,8 +215,8 @@ h1 {
 .produto-header {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    color: #7a3002;
-    font-size: 20px;
+    background-color: #7a3002;
+    color: #fff;
     padding: 10px 5%;
     margin-top: 30px;
     font-weight: bold;
@@ -358,7 +403,7 @@ h1 {
 .cep-link {
     display: block;
     margin-top: 10px;
-    color: #7a3a00;
+    color: #7a3002;
     font-size: 13px;
     text-decoration: underline;
 }
@@ -412,7 +457,7 @@ h1 {
 }
 
 .btn-finalizar {
-    background-color: #7a3002;
+    background-color: #8B4513;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -455,10 +500,50 @@ h1 {
     }
 }
 
+.rodape{
+  background-color: #3e5524;
+}
+
+.saiba-mais{
+  color: white;
+  padding: 20px;
+  font-size: 15px;
+  text-align:center;
+}
+
+.saiba-mais ul{
+  list-style: none;
+  padding: 10px;
+}
+
+.saiba-mais a{
+  color:#ffffff;
+}
+
+.redes-sociais {
+  text-align: center;
+  font-size: 13px;
+  color:#ffffff
+}
+
+.redes-sociais img{
+  width: 30px;
+}
+
+footer{
+  padding: 20px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 10px;
+    color:#ffffff
+}
+
 .btn-voltar {
   position: fixed;
   top: 50%;
-  left: -70px; /* escondido */
+  left: -65px;
   transform: translateY(-50%);
   background-color: #7a3002;
   color: #fff;
@@ -472,7 +557,6 @@ h1 {
   z-index: 999;
 }
 
-/* Quando passa o mouse */
 .btn-voltar:hover {
   left: 0;
 }
