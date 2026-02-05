@@ -16,7 +16,7 @@ body {
     align-items: center;
     padding: 10px 5%;
     background-color: #fff;
-    height: 60px;
+    height: 50px;
 }
 
 /* Logo no lado esquerdo */
@@ -134,45 +134,6 @@ body {
     text-transform: lowercase;
 }
 
-/* ==================== MENU ==================== */
-
-.menu {
-    background-color: #7a3002;
-    padding: 10px;
-    text-align: center;
-    margin: 0
-}
-
-.menu a {
-    font-size: 90%;
-    color: #fff;
-    text-decoration: none;
-    margin:0 20px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.menu a:hover {
-    color: #a1e08b
-}
-
-/* ==================== TÍTULO CARRINHO ==================== */
-
-.titulo-area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-}
-
-h1 {
-    color: #7a3002;
-    border-bottom: 3px solid #7a3002;
-    width: fit-content;
-    padding-bottom: 10px;
-    margin: 0;
-}
-
 /* ==================== CARRINHO VAZIO ==================== */
 
 .empty-cart {
@@ -218,7 +179,7 @@ h1 {
     background-color: #7a3002;
     color: #fff;
     padding: 10px 5%;
-    margin-top: 30px;
+    margin-top: 10px;
     font-weight: bold;
 }
 
