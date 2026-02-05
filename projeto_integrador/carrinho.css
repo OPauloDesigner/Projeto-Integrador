@@ -1,8 +1,3 @@
-body, .search-container input, nav a, footer a, .barra a, .empty-cart p, .rodape {
-  font-family: 'League Spartan', sans-serif;
-  font-weight: 600;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -46,6 +41,7 @@ body {
 }
 
 .search-input {
+  font-family: 'League Spartan', sans-serif;
   border: none;
   outline: none;
   flex-grow: 1;
@@ -54,7 +50,7 @@ body {
   color: #a68b7c;
 }
 
-.search-icon, .mic-button {
+.search-icon {
   color: #632d00;
   background: none;
   border: none;
@@ -64,15 +60,6 @@ body {
 
 .search-input::placeholder {
     color: #c0a99a;
-}
-
-.search-icon,
-.mic-button {
-    color: #7a3002;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
 }
 
 /* Ações no lado direito */
@@ -97,6 +84,7 @@ body {
 
 /* Contador do carrinho */
 .cart-count {
+    font-family: 'League Spartan', sans-serif;
     position: absolute;
     top: -8px;
     right: -8px;
@@ -137,6 +125,7 @@ body {
 /* ==================== CARRINHO VAZIO ==================== */
 
 .empty-cart {
+    font-family: 'League Spartan', sans-serif;
     text-align: center;
     padding: 60px 20px;
     color: #7a3002;
@@ -174,6 +163,7 @@ body {
 
 /* Cabeçalho da tabela */
 .produto-header {
+    font-family: 'League Spartan', sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     background-color: #7a3002;
@@ -193,6 +183,7 @@ body {
 
 /* Item do produto */
 .produto {
+    font-family: 'League Spartan', sans-serif;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     align-items: center;
@@ -223,6 +214,7 @@ body {
 /* ==================== QUANTIDADE ==================== */
 
 .quantidade {
+    font-family: 'League Spartan', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,6 +255,7 @@ body {
 }
 
 .remove {
+    font-family: 'League Spartan', sans-serif;
     background-color: transparent;
     color: #e74c3c;
     border: none;
@@ -279,6 +272,7 @@ body {
 /* ==================== PREÇO ==================== */
 
 .price {
+    font-family: 'League Spartan', sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -370,7 +364,7 @@ body {
 }
 
 /* Lado direito: Total e Botões */
-.checkout-section {
+.checkout-section { 
     display: flex;
     align-items: center;
     gap: 20px;
@@ -383,6 +377,7 @@ body {
     padding: 10px 20px;
     background-color: #fff;
     border-radius: 8px;
+    font-family: 'League Spartan', sans-serif;
 }
 
 .total-etiqueta {
@@ -404,6 +399,7 @@ body {
 }
 
 .btn-continuar {
+    font-family: 'League Spartan', sans-serif;
     color: #D2691E;
     text-decoration: underline;
     background: none;
@@ -418,7 +414,8 @@ body {
 }
 
 .btn-finalizar {
-    background-color: #8B4513;
+    font-family: 'League Spartan', sans-serif;
+    background-color: #7a3002;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -430,7 +427,7 @@ body {
 }
 
 .btn-finalizar:hover {
-    background-color: #7a3002;
+    background-color: #521f00;
 }
 
 /* ==================== RESPONSIVIDADE ==================== */
@@ -466,6 +463,7 @@ body {
 }
 
 .saiba-mais{
+  font-family: 'League Spartan', sans-serif;
   color: white;
   padding: 20px;
   font-size: 15px;
@@ -502,6 +500,7 @@ footer p{
 }
 
 .btn-voltar {
+  font-family: 'League Spartan', sans-serif;
   position: fixed;
   top: 50%;
   left: -65px;
@@ -520,4 +519,18 @@ footer p{
 
 .btn-voltar:hover {
   left: 0;
+}
+
+.folder-prerodape {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.folder-prerodape img {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
 }

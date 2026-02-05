@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a href="inicio.html" class="btn-login">Início ⬅</a>
+
+<div class="login-page">
+    <div class="login-box">
+        <img src="logos/logo.png" alt="logo">
+
+        <!-- FORM COMEÇA AQUI -->
+        <form action="login.php" method="POST">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit">Entrar</button>
+
+        </form>
+        <!-- FORM TERMINA AQUI -->
+
+        <div class="divider">
+            <span>ou continue com</span>
+        </div>
+
+        <div class="social-login">
+            <button class="social-btn google" type="button">
+                Continuar com Google
+            </button>
+
+            <button class="social-btn facebook" type="button">
+                Continuar com Facebook
+            </button>
+        </div>
+
+        <a href="#" class="esqueci-senha">Esqueci minha senha</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -7,10 +7,6 @@ nav a, footer a, .barra a, .texto-informativo h1, h1, h2, h3, .titulo {
   font-weight: 600;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .barra {
   display: flex;
   justify-content: space-between;
@@ -190,7 +186,7 @@ body{
   color: #a68b7c;
 }
 
-.search-icon, .mic-button {
+.search-icon {
   color: #632d00;
   background: none;
   border: none;
